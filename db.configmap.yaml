@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: minflux-db-config
+  namespace: miniflux-ns
+data:
+  DATABASE_URL: postgres://miniflux:secretDbPassword@db/miniflux?sslmode=disable
+  POSTGRES_USER: miniflux
+  POSTGRES_PASSWORD: secretDbPassword
