@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: minflux-app-config
+  name: miniflux-app-config
   namespace: miniflux-ns
 data:
   APP_PORT: "8080"
